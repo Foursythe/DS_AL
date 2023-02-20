@@ -2,10 +2,8 @@
 
 
 struct LinkedItem {
-
 	int value;
 	LinkedItem* next;
-	int index;
 };
 
 struct LinkedList {
@@ -19,3 +17,6 @@ LinkedList* createList();
 void push(LinkedList* list, int value);
 void pop(LinkedList* list);
 void show(LinkedList* list);
+
+void freeList(LinkedList* list);
+void freeItem(LinkedItem* item);
